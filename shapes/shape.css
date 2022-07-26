@@ -1,0 +1,21 @@
+.infinity {
+    position: relative; /*So you can move it aroud the page*/
+    width: 215px;
+    height: 100px;
+    margin: 50px;
+}
+.infinity:before,
+ .infinity:after { /*creates 2 boxes*/
+    content: ""; /*required for before & after*/
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 20px solid blue; /*outline of the shape is visible*/
+    border-radius: 50px 50px 0 50px; /*rounds all corners except bottom right corner*/
+    transform: rotate(-45deg);
+}
+.infinity:after {
+    border-radius: 50px 50px 50px 0; /*rounds all corners except the bottom left*/
+    transform: rotate(45deg);
+    right: 0px; /*positions right square so the corners appear connected*/
+}

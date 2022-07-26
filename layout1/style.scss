@@ -1,0 +1,105 @@
+$card-width: 350px;
+$card-height: $card-width*1.4;
+$club-large: 75px;
+$club-small: 50px;
+* {
+    font-size: 32pt;
+    font-weight: 900;
+}
+
+.card {
+    height: $card-height;
+    width: $card-width;
+    border: solid 1px gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px grey;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    .club {
+        background-image: url(club.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: $club-large $club-large;
+        height: $club-large;
+        width: $club-large;
+    }
+    .small {
+        background-size: $club-small $club-small;
+        height: $club-small;
+        width: $club-small;
+    }
+    .topMiddle{
+    }
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+
+@supports(display:grid) {
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
+        grid-template-areas: 
+            "topSeven topLeft  topRight ." 
+            "topSmall topLeft  topRight ." 
+            ".  topMiddle topMiddle ." 
+            ". middleLeft middleRight ." 
+            ". bottomLeft bottomRight bottomSmall"
+            ". bottomLeft bottomRight bottomSeven";
+        div {
+            margin:0px;
+            align-self: center;
+            justify-self: center;
+        }
+        .club {
+            background-image: url(club.svg);
+            background-position: center;
+            background-size: $club-large $club-large;
+            height: $club-large;
+            width: $club-large;
+        }
+        .small {
+            background-size: $club-small $club-small;
+            height: $club-small;
+            width: $club-small;
+        }
+        &:nth-child(1) {
+            grid-area: topSeven;
+        }
+        .topSmall {
+            grid-area: topSmall;
+        }
+        .topLeft {
+            grid-area: topLeft;
+        }
+        .topRight {
+            grid-area: topRight;
+        }
+        .topMiddle {
+            grid-area: topMiddle;
+        }
+        .middleLeft {
+            grid-area: middleLeft;
+        }
+        .middleRight {
+            grid-area: middleRight;
+        }
+        .bottomLeft {
+            grid-area: bottomLeft;
+        }
+        .bottomRight {
+            grid-area: bottomRight;
+        }
+        .bottomSmall {
+            grid-area: bottomSmall;
+        }
+        .bottomSeven {
+            grid-area: bottomSeven;
+        }
+    }
+}

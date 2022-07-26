@@ -1,0 +1,43 @@
+
+
+csslint: There are 8 problems in C:\Users\Daniel\OneDrive\S6\CSS\Sliding Menu\styles.css.
+
+styles.css
+1: warning at line 14, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-icon span:nth-child(1) {
+
+styles.css
+2: warning at line 23, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-icon span.open:nth-child(1) {
+
+styles.css
+3: warning at line 26, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-icon span:nth-child(2) {
+
+styles.css
+4: warning at line 36, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-icon span.open:nth-child(2) {
+
+styles.css
+5: warning at line 39, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-icon span:nth-child(3) {
+
+styles.css
+6: warning at line 48, col 3
+Rule doesn't have all its properties in alphabetical order.
+  .menu-icon span.open:nth-child(3) {
+
+styles.css
+7: warning at line 52, col 1
+Rule doesn't have all its properties in alphabetical order.
+.slideout {
+
+styles.css
+8: warning at line 69, col 9
+Values of 0 shouldn't have units specified.
+  left: 0px; }

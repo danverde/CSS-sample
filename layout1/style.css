@@ -1,0 +1,73 @@
+* {
+  font-size: 32pt;
+  font-weight: 900; }
+
+.card {
+  height: 490px;
+  width: 350px;
+  border: solid 1px gray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px grey;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around; }
+  .card .club {
+    background-image: url(club.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+    height: 75px;
+    width: 75px; }
+  .card .small {
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px; }
+
+.rotated {
+  transform: rotate(180deg); }
+
+@supports (display: grid) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-template-areas: "topSeven topLeft  topRight ."  "topSmall topLeft  topRight ."  ".  topMiddle topMiddle ."  ". middleLeft middleRight ."  ". bottomLeft bottomRight bottomSmall" ". bottomLeft bottomRight bottomSeven"; }
+    .card div {
+      margin: 0px;
+      align-self: center;
+      justify-self: center; }
+    .card .club {
+      background-image: url(club.svg);
+      background-position: center;
+      background-size: 75px 75px;
+      height: 75px;
+      width: 75px; }
+    .card .small {
+      background-size: 50px 50px;
+      height: 50px;
+      width: 50px; }
+    .card:nth-child(1) {
+      grid-area: topSeven; }
+    .card .topSmall {
+      grid-area: topSmall; }
+    .card .topLeft {
+      grid-area: topLeft; }
+    .card .topRight {
+      grid-area: topRight; }
+    .card .topMiddle {
+      grid-area: topMiddle; }
+    .card .middleLeft {
+      grid-area: middleLeft; }
+    .card .middleRight {
+      grid-area: middleRight; }
+    .card .bottomLeft {
+      grid-area: bottomLeft; }
+    .card .bottomRight {
+      grid-area: bottomRight; }
+    .card .bottomSmall {
+      grid-area: bottomSmall; }
+    .card .bottomSeven {
+      grid-area: bottomSeven; } }
+
+/*# sourceMappingURL=style.css.map */

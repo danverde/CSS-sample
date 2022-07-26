@@ -1,0 +1,34 @@
+.heart{
+    position: relative;
+    margin: 126px;
+}
+.heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 25px 25px 0 0;
+    transform: rotate(45deg);
+}
+
+.heart::after{
+    transform: rotate(-45deg);
+    left: 0;
+}
+
+
+
+
+/*before makes the element inline, ignres height & width*/
+/*transform-origin -> default to 50% 50% (x,y) -> rotates around the center*/
+
+
+/*.heart1 {
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50% 50% 0 0;*/
+    /*border-radius: 50% / 80%*/ /* / differentiates between horizontal & vertical radius*/
+/*}*/

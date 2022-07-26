@@ -1,0 +1,22 @@
+.infinity {
+    position: relative; //allows for positioning on page
+    width: 215px;
+    height: 100px;
+    margin: 50px;
+}
+.infinity:before,
+.infinity:after {
+    //creation of 2 extra divs
+    content: ""; // required
+    position: absolute; // allows 2 divs to be placed next to each other
+    width: 60px;
+    height: 60px;
+    border: 20px solid blue; // creates outline - innards aren't seen
+    border-radius: 50px 50px 0 50px; //rounds all corners but bottom right
+    transform: rotate(-45deg);
+}
+.infinity:after {
+    right: 0; //places second div slightly on top of first dov
+    border-radius: 50px 50px 50px 0; // rounds bottom left corner instead of bottom right
+    transform: rotate(45deg); // rotates so teh corners are touching
+}

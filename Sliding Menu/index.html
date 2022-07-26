@@ -1,0 +1,42 @@
+<!DOCTYLE HTML>
+<html>
+
+<head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class='menu-icon' onclick='toggleNav()'>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <h1>Animated Sliding Menu</h1>
+    <p>Lots of content</p>
+
+
+    <nav class='slideout'>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ul>
+    </nav>
+
+
+    <script>
+        function toggleNav() {
+            var menu = document.querySelector('.slideout');
+            var hamburger = document.querySelectorAll('div.menu-icon span');
+
+            hamburger.forEach(function(line) {
+                line.classList.toggle('open');
+            });
+            menu.classList.toggle("slide");
+        }
+
+    </script>
+</body>
+
+</html>

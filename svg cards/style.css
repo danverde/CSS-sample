@@ -1,0 +1,35 @@
+#deathStar {
+  transform: translate(-59px, 50px);
+  stroke: #000000;
+  stroke-miterlimit: 10; }
+
+.filled {
+  fill: #D1D1D1; }
+
+.card {
+  stroke: #bfbfbf;
+  stroke-miterlimit: 20;
+  stroke-width: 15px;
+  height: 350px;
+  width: 250px;
+  border-radius: 25px; }
+
+#cardTwo {
+  position: absolute;
+  left: 500px; }
+
+.circle {
+  fill: #F7DD1C;
+  stroke: #F9BE19;
+  stroke-miterlimit: 10; }
+
+.triangle {
+  fill: #ED5858;
+  stroke: #7B282A;
+  stroke-miterlimit: 10; }
+
+.rotated {
+  transform-origin: center;
+  transform: rotate(180deg); }
+
+/*# sourceMappingURL=style.css.map */
